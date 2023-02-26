@@ -42,7 +42,8 @@ address > div {
     align-items: center;
 }
 
-div.navigation {
+div.navigation, .about-text span {
+    font-size: 25px;
     color: var(--text-col);
     font-weight: 600;
 }
@@ -108,3 +109,44 @@ footer > img {
     font-size: 8rem;
 }
 
+.about {
+    padding: 50px calc(100px + 10vw);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.about .socials {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.about .socials img {
+    height: 30px;
+}
+
+.about-text {
+    background-color: var(--background-col);
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.about-text span {
+    padding-bottom: 20px;
+}
+
+.about-text p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+hr {
+    margin-top: 10px;
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
