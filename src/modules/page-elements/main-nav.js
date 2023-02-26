@@ -23,7 +23,7 @@ const createMainNav = (() => {
     const contact = document.createElement('span');
     contact.textContent = 'Contact';
 
-    mainDiv = document.createElement('div');
+    const mainDiv = document.createElement('div');
     mainDiv.setAttribute('class', 'navigation');
     maindiv.append(
         home,
