@@ -3,8 +3,8 @@ const createMainHeader = (() => {
         let container = document.createElement('div');
 
         let image = document.createElement('img');
-        image.src = '../src/assets/icons/location-icon/png';
-        image.setAttribute('alt', 'location icon');
+        image.src = '../../assets/icons/location-icon/png';
+        image.alt = 'location icon';
 
         let description = document.createElement('span');
         description.textContent = '123 Hillview Drive, Portland OR |';
@@ -18,8 +18,8 @@ const createMainHeader = (() => {
         let container = document.createElement('div');
 
         let image = document.createElement('img');
-        image.setAttribute('src', "../src/assets/icons/timings-icon.png");
-        image.setAttribute('alt', 'timings icon');
+        image.src = "../../assets/icons/timings-icon.png";
+        image.alt = 'timings icon';
 
         let description = document.createElement('span');
         description.textContent = 'Weekdays 10AM - 2PM, Weekends 9AM - 2PM |';
@@ -33,8 +33,8 @@ const createMainHeader = (() => {
         let container = document.createElement('div');
 
         let image = document.createElement('img');
-        image.setAttribute('src', "../src/assets/icons/contact-icon.png");
-        image.setAttribute('alt', 'contact icon');
+        image.src = "../../assets/icons/contact-icon.png";
+        image.alt = 'contact icon';
 
         let description = document.createElement('span');
         description.textContent = '(987) 654-3201';
