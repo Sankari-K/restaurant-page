@@ -62,13 +62,12 @@ div.navigation {
 .navigation > span:hover {
     color: var(--text-col-light);
     display: inline;
-    /* on a click - make this happen */
     text-decoration-line: underline;   
     text-decoration-color: var(--text-col-light); 
 }
 
 .slider {
-    background: url(./assets/slider-1.png) no-repeat center center fixed;
+    background: url(./assets/hero-image.png) no-repeat center center fixed;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -76,9 +75,13 @@ div.navigation {
     justify-content: center;
 }
 
-body {
+div#content {
     display: grid;
     grid-template-rows: auto auto 1fr auto;
+    height: 100vh;
+}
+
+body {
     height: 100vh;
 }
 
@@ -102,3 +105,4 @@ footer > img {
 .slider p {
     font-size: 8rem;
 }
+
