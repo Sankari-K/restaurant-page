@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Quicksand:wght@300;400;500;600&display=swap');
+
+:root {
+    --background-col: #CBB298;
+    --text-col: #565E46;
+    --text-col-light: #6E2205;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    color: var(--text-col);
+    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+address > div > img, footer > img{
+    height: 15px;
+    width: 15px;
+    filter: invert(37%) sepia(3%) saturate(3254%) hue-rotate(38deg) brightness(91%) contrast(90%);
+}
+
+.navigation img {
+    height: 50px;
+}
+
+address, footer {
+    padding: 12px;
+    font-size: 0.9rem;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    background-color: var(--background-col);
+}
+
+address > div {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+div.navigation {
+    color: var(--text-col);
+    font-weight: 600;
+}
+
+.navigation {
+    font-size: 25px;
+    padding: 8px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.navigation > span {
+    padding: 15px;
+}
+
+.navigation > span:hover {
+    color: var(--text-col-light);
+    display: inline;
+    /* on a click - make this happen */
+    text-decoration-line: underline;   
+    text-decoration-color: var(--text-col-light); 
+}
+
+.slider {
+    background: url(./assets/slider-1.png) no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    height: 100vh;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+}
+
+footer > img {
+    height: 20px;
+    width: 20px;
+}
+
+.slider p, .slider span{
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 900;
+    color: white;
+}
+
+.slider p {
+    font-size: 8rem;
+}
