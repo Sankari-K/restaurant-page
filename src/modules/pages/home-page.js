@@ -4,7 +4,7 @@ import { createMainHeader } from '../page-elements/main-header';
 import { createMainNav } from '../page-elements/main-nav';
 
 const createHomePage = (() => {
-    body = document.querySelector('div#content');
+    const body = document.querySelector('div');
     body.append(
         createMainHeader(),
         createMainNav(),

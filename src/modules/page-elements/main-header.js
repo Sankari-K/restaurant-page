@@ -1,9 +1,13 @@
+import addressSrc from '../../assets/icons/location-icon.png'
+import timingsSrc from '../../assets/icons/timings-icon.png'
+import contactSrc from '../../assets/icons/contact-icon.png'
+
 const createMainHeader = (() => {
     const createAddress = () => {
         let container = document.createElement('div');
 
         let image = document.createElement('img');
-        image.src = '../../assets/icons/location-icon/png';
+        image.src = addressSrc;
         image.alt = 'location icon';
 
         let description = document.createElement('span');
@@ -18,7 +22,7 @@ const createMainHeader = (() => {
         let container = document.createElement('div');
 
         let image = document.createElement('img');
-        image.src = "../../assets/icons/timings-icon.png";
+        image.src = timingsSrc;
         image.alt = 'timings icon';
 
         let description = document.createElement('span');
@@ -33,7 +37,7 @@ const createMainHeader = (() => {
         let container = document.createElement('div');
 
         let image = document.createElement('img');
-        image.src = "../../assets/icons/contact-icon.png";
+        image.src = contactSrc;
         image.alt = 'contact icon';
 
         let description = document.createElement('span');

@@ -14,7 +14,9 @@
     font-family: 'Quicksand', sans-serif;
 }
 
-
+a {
+    text-decoration: none;
+}
 address > div > img, footer > img{
     height: 15px;
     width: 15px;

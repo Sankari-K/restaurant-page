@@ -1,15 +1,19 @@
-const createMainFooter = (() => {
-    const githubLogo = document.createElement('img');
-    githubLogo.src = '../../assets/github-icon.png';
-    githubLogo.alt = 'github logo';
+import gitHubLogoSrc from '../../assets/icons/github-icon.png';
 
-    const name = document.createElement('span');
-    name.textContent = 'Sankari Karthik';
+const createMainFooter = (() => {
+    const mainLink = document.createElement('a');
+    mainLink.setAttribute('href', 'https://github.com/Sankari-K/restaurant-page');
+    mainLink.textContent = 'Sankari Karthik';
+    mainLink.setAttribute('target',  '_blank');
+    
+    const githubLogo = document.createElement('img');
+    githubLogo.src = gitHubLogoSrc;
+    githubLogo.alt = 'github logo';
 
     const footer = document.createElement('footer');
     footer.append(
-        githubLogo,
-        name
+        githubLogo, 
+        mainLink
     )
     return footer;
 });

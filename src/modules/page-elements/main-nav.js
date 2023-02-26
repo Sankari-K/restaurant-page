@@ -1,10 +1,12 @@
+import logoImgSrc from '../../assets/logo.png'
+
 const createMainNav = (() => {
     const createLogo = () => {
         const logo = document.createElement('span');
 
-        link = document.createElement('a');
-        logoImg = document.createElement('img');
-        logoImg.src = '../../assets/logo.png';
+        const link = document.createElement('a');
+        const logoImg = document.createElement('img');
+        logoImg.src = logoImgSrc;
 
         link.appendChild(logoImg);
         logo.appendChild(link);
@@ -25,7 +27,7 @@ const createMainNav = (() => {
 
     const mainDiv = document.createElement('div');
     mainDiv.setAttribute('class', 'navigation');
-    maindiv.append(
+    mainDiv.append(
         home,
         about,
         createLogo(),
