@@ -7,18 +7,21 @@ const createSocials = () => {
     container.setAttribute('class', 'socials');
 
     const instaLink = document.createElement('a');
+    instaLink.setAttribute('href', '');
     const instaPic = document.createElement('img');
     instaPic.src = instaPicSrc;
     instaPic.alt = 'Instagram logo';
     instaLink.appendChild(instaPic);
 
     const fbLink = document.createElement('a');
+    fbLink.setAttribute('href', '');
     const fbPic = document.createElement('img');
     fbPic.src = fbPicSrc;
     fbPic.alt = 'Facebook logo';
     fbLink.appendChild(fbPic);
 
     const twtLink = document.createElement('a');
+    twtLink.setAttribute('href', '');
     const twtPic = document.createElement('img');
     twtPic.src = twtPicSrc;
     twtPic.alt = 'Twitter logo';
