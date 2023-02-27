@@ -4,5 +4,5 @@ import { createAboutPage } from "./modules/pages/about-page";
 import { createMenuPage } from "./modules/pages/menu-page";
 
 // createHomePage();
-// createAboutPage();
-createMenuPage();
+createAboutPage();
+// createMenuPage();

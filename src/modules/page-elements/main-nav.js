@@ -5,6 +5,7 @@ const createMainNav = (() => {
         const logo = document.createElement('span');
 
         const link = document.createElement('a');
+        link.setAttribute('href', '');
         const logoImg = document.createElement('img');
         logoImg.src = logoImgSrc;
 
