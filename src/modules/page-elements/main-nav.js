@@ -14,26 +14,26 @@ const createMainNav = (() => {
         return logo;
     }
 
-    const home = document.createElement('span');
-    home.textContent = 'Home';
+    const createTabs = (name) => {
+        const container = document.createElement('a');
+        container.setAttribute('href', "");
 
-    const about = document.createElement('span');
-    about.textContent = 'About';
+        const nameTab = document.createElement('span');
+        nameTab.textContent = name;
 
-    const menu = document.createElement('span');
-    menu.textContent = 'Menu';
+        container.appendChild(nameTab);
+        return container;
 
-    const contact = document.createElement('span');
-    contact.textContent = 'Contact';
-
+    }
+    
     const mainDiv = document.createElement('div');
     mainDiv.setAttribute('class', 'navigation');
     mainDiv.append(
-        home,
-        about,
+        createTabs('Home'),
+        createTabs('About'),
         createLogo(),
-        menu, 
-        contact
+        createTabs('Menu'), 
+        createTabs('Contact')
     )
     return mainDiv;
 });
