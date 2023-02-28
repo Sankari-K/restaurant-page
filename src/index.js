@@ -2,6 +2,7 @@ import { createHomePage } from "./modules/pages/home-page";
 import { createAboutPage } from "./modules/pages/about-page";
 import { createMenuPage } from "./modules/pages/menu-page";
 import { createContactPage } from "./modules/pages/contact-page";
+import './style.css';
 
 function clearDOM() {
     const content = document.querySelector('#content');
