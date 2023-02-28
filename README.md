@@ -14,7 +14,7 @@ This project demonstrates the usage of webpack and ES6 modules, with a focus on 
 
 ## Getting Started
 In order to set this up, you will need to:
-1) Clone this project: `git@github.com: Sankari-K/restaurant-page.git`
+1) Clone this project: `https://github.com/Sankari-K/restaurant-page.git`
 2) Install the required dependencies: `npm install`
 3) A live demo of the project can be started with: `npm start`
 4) Distribution files can be produced with: `npm run build`
