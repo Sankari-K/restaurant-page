@@ -236,3 +236,10 @@ button:focus {
     background: var(--text-col);
     color: #fff;
 }
+
+.focus {
+    text-decoration-color: var(--background-col);
+    text-decoration: underline;
+    text-underline-offset: 0.25em;
+    border-radius: 10px;
+}

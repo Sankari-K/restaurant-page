@@ -12,21 +12,33 @@ function clearDOM() {
 function showHome() {
     clearDOM();
     createHomePage();
+
+    const home = document.getElementById('Home');
+    home.classList.add('focus');
 }
 
 function showAbout() {
     clearDOM();
     createAboutPage();
+
+    const about = document.getElementById('About');
+    about.classList.add('focus');
 }
 
 function showMenu() {
     clearDOM();
     createMenuPage();
+
+    const menu = document.getElementById('Menu');
+    menu.classList.add('focus');
 }
 
 function showContact() {
     clearDOM();
     createContactPage();
+
+    const contact = document.getElementById('Contact');
+    contact.classList.add('focus');
 }
 
 showHome();
