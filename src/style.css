@@ -187,7 +187,7 @@ form div {
     gap: 5px;
 }
 
-.contact #comment {
+.contact #message {
     /* line-height:normal; */
     height: 70px;
     vertical-align:text-top;  
