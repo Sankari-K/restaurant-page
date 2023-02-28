@@ -16,7 +16,6 @@ const createMainNav = (() => {
 
     const createTabs = (name) => {
         const container = document.createElement('a');
-        container.setAttribute('href', "");
 
         const nameTab = document.createElement('span');
         nameTab.textContent = name;

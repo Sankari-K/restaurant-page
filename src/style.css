@@ -64,6 +64,7 @@ div.navigation, .about-text span, .menu-text span, .contact-text > span {
 
 .navigation span:hover {
     color: var(--background-col);
+    cursor: pointer;
 }
 
 .slider {
