@@ -25,7 +25,9 @@ const createAboutContent = (() => {
         Curabitur nec augue ac odio scelerisque egestas eu at elit.
         Vestibulum dolor tellus, luctus eget condimentum sit amet, 
         tincidunt id libero. Donec vitae tempor ante. Interdum et 
-        malesuada fames ac ante ipsum primis in faucibus.`;
+        malesuada fames ac ante ipsum primis in faucibus.
+        Aliquam et nulla lectus. Orci varius natoque penatibus et 
+        magnis dis parturient montes, nascetur ridiculus mus.`;
 
         container.append(
             spanText,
