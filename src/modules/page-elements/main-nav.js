@@ -20,6 +20,7 @@ const createMainNav = (() => {
 
         const nameTab = document.createElement('span');
         nameTab.textContent = name;
+        nameTab.setAttribute('id', `${name}`);
 
         container.appendChild(nameTab);
         return container;
