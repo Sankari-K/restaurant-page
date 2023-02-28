@@ -42,7 +42,7 @@ address > div {
     align-items: center;
 }
 
-div.navigation, .about-text span, .menu-text span {
+div.navigation, .about-text span, .menu-text span, .contact-text > span {
     font-size: 25px;
     color: var(--text-col);
     font-weight: 600;
@@ -106,27 +106,30 @@ footer > img {
     font-size: 8rem;
 }
 
-.about, .menu {
-    padding: 50px calc(100px + 10vw);
+.about, .menu, .contact {
+    padding: 50px calc(100px + 10vw) 30px; /* check! */
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
-    justify-content: space-around;
-    
+    justify-content: space-evenly;
 }
 
-.about .socials, .menu .socials {
-    margin-top: 35px;
+.about .socials, .menu .socials, .contact .socials {
+    margin-top: 15px; 
     display: flex;
     gap: 10px;
 }
 
-.about .socials img, .menu .socials img {
+.menu .socials {
+    margin-top: 35px;
+}
+
+.about .socials img, .menu .socials img, .contact .socials img {
     height: 30px;
 }
 
-.about-text, .menu-text {
+.about-text, .menu-text, .contact-text {
     background-color: var(--background-col);
     border-radius: 15px;
     padding: 30px;
@@ -159,4 +162,76 @@ hr {
 .menu-text {
     border: 2px solid;
     outline: 16px solid var(--background-col);
+}
+
+.contact-text p {
+    padding: 20px;
+    font-size: larger;
+}
+
+.contact-text .required {
+    color: red;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+.contact #comment {
+    /* line-height:normal; */
+    height: 70px;
+    vertical-align:text-top;  
+
+}
+
+input, textarea {
+    width: 300px;
+    height: 30px;
+    border-radius: 4px;
+    border: none;
+    padding: 2px; 
+    resize: none;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border: 2px solid var(--text-col);
+}
+
+input:valid, textarea:valid {
+    background-color: #98cbb2;
+}
+
+input:invalid, textarea:invalid {
+    background-color: #cb9998; 
+}
+
+button {
+    padding: 10px;
+    font-size: larger;
+    border: 2px solid var(--text-col);
+    border-radius: 5px;
+    background: none;
+    cursor: pointer;
+}
+
+button:after {
+    content: " >>>";
+}
+  
+button:hover,
+button:focus {
+    outline: none;
+    background: var(--text-col);
+    color: #fff;
 }
